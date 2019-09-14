@@ -13,7 +13,7 @@ jobs:
 
 deploy: 
   skip_cleanup: true
-  zip_file: nordiccars.war
+  zip_file: target/nordiccars.war
   provider: elasticbeanstalk
   app: nordiccars
   env: nordiccars-env
