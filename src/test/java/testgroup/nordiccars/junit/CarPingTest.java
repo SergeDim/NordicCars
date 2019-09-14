@@ -59,7 +59,7 @@ public class CarPingTest
     @Test
     public void testTimeIsOut() throws Exception
     {
-    	Date dt = new Date(System.currentTimeMillis() + vehicle.getValidTimeout()+1);
+    	Date dt = new Date(System.currentTimeMillis() - (vehicle.getValidTimeout()+1));
     	vehicle.setLastPing(dt);
         assertFalse(vehicle.isConnected());
     }
