@@ -16,7 +16,7 @@ import testgroup.nordiccars.service.VehicleService;
 @Controller
 public class CarController
 {
-	// -- @Autowired - подбирает соответствующую реализацию интерфейса из доступных сервисов (@Service)
+	// -- @Autowired - choose a proper Intf implementation from available ones
     @Autowired
     private VehicleService carService;
     

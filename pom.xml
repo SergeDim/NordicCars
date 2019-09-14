@@ -3,7 +3,7 @@
   <groupId>testgroup</groupId>
   <artifactId>nordiccars</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>altentest</name>
+  <name>NordicCars</name>
   <packaging>war</packaging>
   
   <build>
@@ -52,5 +52,5 @@
   		<scope>test</scope>
   	</dependency>
   </dependencies>
-  <description>AltenTest</description>
+  <description>Alten Test</description>
 </project>

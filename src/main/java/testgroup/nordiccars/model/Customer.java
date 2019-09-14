@@ -24,4 +24,9 @@ public class Customer
 	public int getId() {
 		return cid;
 	}
+
+	public String getAddress() {
+		return address;
+	}
+	
 }

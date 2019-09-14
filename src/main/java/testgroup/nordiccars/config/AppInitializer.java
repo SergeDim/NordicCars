@@ -23,12 +23,8 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 		return new String[]{"/"};
 	}
 
-/*
-Еще один момент. Возможно будут проблемы с кодировкой, когда при отправке с формы значений с русскими символами в результате будут получаться каракули.
-Для решения этой проблемы добавим фильтр, который будет заниматься предварительной обработкой запросов.
-Заходим в класс AppInitializer и переопределяем метод getServletFilters, в котором укажем нужную кодировку,
-она разумеется должна быть такой же как и везде, как на страницах и в базе данных:
-*/
+	// National Symbols Support on pages
+	
 	protected Filter[] getServletFilters() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");

@@ -24,7 +24,7 @@ public class CarPingTest
  
     @Before
     public void initTest() {
-        vehicle = new Car();
+        vehicle = new Car("VOLVOTESTVIN", "STLM8888", null);
     }
  
     @After
