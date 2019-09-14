@@ -6,15 +6,15 @@
    { border-collapse: collapse; }
    td  
    {   padding: 3px;
-       border: 2px solid #9B870C;
+       border: 2px solid #9B900C;
    }    
    th  
    {   padding: 4px;
        border: 2px solid blue;
    }
-.margin-left{
-    margin-left: 20px;
-}   
+   
+  .margin-left {  margin-left: 20px;}   
+  .L-copyright { font-size: 10px;}
 </style> 
 <head>
 <meta http-equiv="refresh" content="10">
@@ -57,8 +57,8 @@
 
 </head>
 <body>
+<div align="right" class="L-copyright">(c) 2019 Sergej Dmitriev :: Alten</div>
 <h2>Nordic Cars Information</h2>
-<!-- ${car} -->
     <div>
     <label>Customer:</label>
         <select id='filterCust'>
