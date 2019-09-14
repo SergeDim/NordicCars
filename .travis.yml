@@ -2,5 +2,10 @@
 branches: 
   only: 
     - master
+jobs: 
+  include: 
+    - 
+      stage: install
+      script: mvn install -B
 language: java
 sudo: false
