@@ -7,9 +7,7 @@ branches:
     - master
 jobs: 
   include: 
-    - 
-      stage: install
-      script: mvn install -B
+    script: mvn install -B
 
 deploy: 
   skip_cleanup: true
@@ -19,7 +17,6 @@ deploy:
   bucket_name: elasticbeanstalk-eu-north-1-975683505961
   region: eu-north-1
   access_key_id: 
-    secure: "Encrypted <access-key-id>="
+    secure: "NwXES2+Zo1L8n0OHSHD0rYw3/o3UK0AveDZm3BYVXGOsQo6Q7SgBjV7ZikxPIjxAX3/GN9vnEw4QIbJ34/xTe6siIpdFVvMLxmcZunJBMw7tQdjLg/vdTpw29g9LRjzkNwLySh/g+n5GVoXZ0IMUWyQVLi2RKYmfFY11IdCfX3zVmbRxX7y/Knqh+CM8R9sUZ8/ipTDV7sBDPAGiVSiHlibiUe5VO+/iIRfsSs7UXtCzZLls0IJepMZ7mVRvjlOyV3e2+zkesITUou8Lr+1TBOVBEbNjrKwk/+7DAolTxl0jPUb5TMwUTg4GV5OBqHHaBH0dUcmS4HHoPnpGnTQXDFcY7DjBYKHwnw0ztQbbNUNEjH6rSRWzaRCNcI6/ELvPVNQjeQlyBN/9qkfLJTonFzVBl6r7kY9tLATXaAgNt+ht0bI72j4fHHdBmve+VYJoryAuSCMcQ68/nmfE0nS8Q0nBbJgLIhOkfmqTFySBdziW06pXcH5FSqZUvool+jmyA5Yo/A9jq3+UZIvGZl7PGRUynVfa95yPrKcq1q6hG3LXkYLEnvDcAQdQgQHHeT16Z7RwvN9hC9Aj2roFhNMs2uHAmWNWrGTzaLhjsIsMOWkzhcLWdw6+kCunM2XHURbKJioWa7XRmXmIY/9mDwEKlYVmeo/R8LmNj8CdkAPrj9g="
   secret_access_key: 
-    secure: "Encypted <secret-access-key>="
-
+    secure: "dDWGH3hzhcfVumQA2vQIPW/4mUOWDnt5bskz4GTDh0MRRkDCjhe6gH14d9RjM890yLzUvEaxTv8gsysjhhCdRSTj8Iao2F1brWN9R7ztnyyDpOMeaUfo3nEviGJBtmbYdlQE5MLyGdB1cewnP8zIPdpFeMIO7jD1rfCCJjAXG1DmrfnqnudmdDTsz+ln00dB4dtAPQyI5gBF2426doZ18b/9bZFFGfhU04jSdMeJwkn0721/1pSURxtNN585XNs3hjqsqm48P45e9eUDCSD/uaIdLTeqeO3HVDfxMOtxpziQ9lvLCUn+IjFGomGFce3fZYYy/NWHsD0yBDdSd96vhuHoZjbogagf0klR0Xs4Re+xdX0vJsgmVInJgAnwfz7eKR29Js3t5JpFdJCGjW3Rhpz1SRGclrSrhqxjo4HclqFSdI6O4OjJlJsnXBOlh79g4SeiUBxYX/x/NqljtPfnXs+oL+CdIm4Tv+gOlU+8zN3BR2c2VIwybi5AJ2mZMrJp+TV6FKFnikASNztwQz9RsB0GwyjFrScilDWdk2AUPA9EGXRS/3ykVO2+C62Mr+wIjT1W8Fs7pXlrblZk0b+tHjNv39IyyDnoCNYIieePJlExF/7l7oP8ykGsx1QE3pq3JkHkD6/50xRxIGdckpGBo8oojn9mvRUEgHp9Vn8oPew="
