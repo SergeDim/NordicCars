@@ -2,7 +2,9 @@ package testgroup.nordiccars.model;
 
 import java.util.Date;
 
-public class Car {
+public class Car
+{
+	private long valid_timeout = 60*1000; //milliseconds
     private String vin;
     private String regNum;
     private Date lastPing;
@@ -59,7 +61,7 @@ public class Car {
 		
 		if (lastPing==null)
 		  return false;
-		return (new Date().getTime() - lastPing.getTime()) <= 60*1000;
+		return (new Date().getTime() - lastPing.getTime()) <= valid_timeout;
 	}
 	
 	public int getCustomerId() {
@@ -76,5 +78,10 @@ public class Car {
 	
 	public String toString(){
 		return vin+" '"+regNum+"' ("+lastPing+")";
+	}
+
+	// milliseconds
+	public long getValidTimeout() {
+		return valid_timeout;
 	}
 }
