@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.stereotype.Repository;
 
@@ -14,7 +13,6 @@ import testgroup.nordiccars.model.Customer;
 @Repository
 public class CarDAOImpl implements CarDAO
 {
-    //private static final AtomicInteger AUTO_ID = new AtomicInteger(0);
     private static Map<String, Car> cars = new HashMap<>();
 
     static {

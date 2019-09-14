@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import testgroup.nordiccars.dao.CarDAO;
-import testgroup.nordiccars.dao.CustomerDAO;
 import testgroup.nordiccars.model.Car;
-import testgroup.nordiccars.model.Customer;
 
 @Service
 public class VechicleServiceImpl implements VehicleService

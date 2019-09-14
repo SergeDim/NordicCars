@@ -3,7 +3,6 @@ package testgroup.nordiccars.service;
 import java.util.List;
 
 import testgroup.nordiccars.model.Car;
-import testgroup.nordiccars.model.Customer;
 
 public interface VehicleService
 {
