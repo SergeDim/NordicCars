@@ -13,7 +13,7 @@
    }    
 </style> 
 <head>
-<!--meta http-equiv="refresh" content="10"-->
+
     <title>Cars Activity Emulator</title>
 <script>
 	function httpGetAsync(theUrl, callback)
@@ -57,7 +57,7 @@
 	var j=0;
 	var timerPing = setInterval(function(){
 	    lTime = document.getElementById('LTime');
-		j = Math.floor(Math.random() * 50);
+		j = Math.floor(Math.random() * 40);
 		if (j<arrCars.length)
 			pingCar(arrCars[j]);
 		loadTable();

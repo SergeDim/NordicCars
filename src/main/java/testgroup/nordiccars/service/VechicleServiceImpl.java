@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import testgroup.nordiccars.dao.CarDAO;
+import testgroup.nordiccars.dao.CarDAOImpl;
 import testgroup.nordiccars.model.Car;
 
 @Service
@@ -14,6 +15,16 @@ public class VechicleServiceImpl implements VehicleService
 {
 	@Autowired
     private CarDAO carDAO;
+	
+	public VechicleServiceImpl()
+	{
+	}
+	
+	public VechicleServiceImpl(boolean bTest)
+	{
+		if (bTest)
+		  carDAO = new CarDAOImpl();
+	}
 	
     @Override
     public List<Car> allCars() {

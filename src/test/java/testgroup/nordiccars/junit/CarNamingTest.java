@@ -12,12 +12,12 @@ public class CarNamingTest
     
     @BeforeClass
     public static void beforeClass() {
-        System.out.println("Before CarNamingTest.class");
+        //System.out.println("Before CarNamingTest.class");
     }
  
     @AfterClass
     public  static void afterClass() {
-        System.out.println("After CarNamingTest.class");
+        //System.out.println("After CarNamingTest.class");
     }
  
     @Before

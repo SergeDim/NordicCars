@@ -16,12 +16,12 @@ public class CarDAOImplTest
     
     @BeforeClass
     public static void beforeClass() {
-        System.out.println("Before CarDAOImplTest.class");
+        //System.out.println("Before CarDAOImplTest.class");
     }
  
     @AfterClass
     public  static void afterClass() {
-        System.out.println("After CarDAOImplTest.class");
+        //System.out.println("After CarDAOImplTest.class");
     }
  
     @Before
