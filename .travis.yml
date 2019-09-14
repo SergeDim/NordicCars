@@ -7,5 +7,17 @@ jobs:
     - 
       stage: install
       script: mvn install -B
+
+deploy: 
+  provider: elasticbeanstalk
+  app: nordiccars
+  env: nordiccars-env
+  bucket_name: elasticbeanstalk-eu-north-1-975683505961
+  region: eu-north-1
+  access_key_id: 
+    secure: "Encrypted <access-key-id>="
+  secret_access_key: 
+    secure: "Encypted <secret-access-key>="
+	
 language: java
 sudo: false
