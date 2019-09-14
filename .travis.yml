@@ -1,4 +1,7 @@
 --- 
+sudo: false
+language: java
+
 branches: 
   only: 
     - master
@@ -9,6 +12,7 @@ jobs:
       script: mvn install -B
 
 deploy: 
+  skip_cleanup: true
   provider: elasticbeanstalk
   app: nordiccars
   env: nordiccars-env
@@ -19,5 +23,3 @@ deploy:
   secret_access_key: 
     secure: "Encypted <secret-access-key>="
 
-language: java
-sudo: false
