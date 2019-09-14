@@ -1,0 +1,6 @@
+--- 
+branches: 
+  only: 
+    - master
+language: "java - 8"
+sudo: false
