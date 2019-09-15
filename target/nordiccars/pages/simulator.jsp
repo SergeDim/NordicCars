@@ -57,7 +57,7 @@
 	var j=0;
 	var timerPing = setInterval(function(){
 	    lTime = document.getElementById('LTime');
-		j = Math.floor(Math.random() * 40);
+		j = Math.floor(Math.random() * 30);
 		if (j<arrCars.length)
 			pingCar(arrCars[j]);
 		loadTable();
