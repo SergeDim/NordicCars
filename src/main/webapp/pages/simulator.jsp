@@ -57,15 +57,15 @@
 	var j=0;
 	var timerPing = setInterval(function(){
 	    lTime = document.getElementById('LTime');
-		j = Math.floor(Math.random() * 30);
+		j = Math.floor(Math.random() * arrCars.length*3);
 		if (j<arrCars.length)
 			pingCar(arrCars[j]);
 		loadTable();
-	}, 5000);
+	}, 8000);
 </script>
 </head>
 <body>
-<h2>Cars Activity Emulator</h2>
+<h2>Vehicle Simulating Engine</h2>
     Server Response: <p id="LTime">--- Random Ping ---</p>
 <h2>Cars on road</h2>
 <div id="carDiv">
