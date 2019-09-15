@@ -8,8 +8,8 @@ branches:
 jobs: 
   include: 
     - 
-      stage: install
-      script: mvn install -B
+      stage: integration-test
+      script: mvn integration-test -B
 
 deploy: 
   skip_cleanup: true
