@@ -9,7 +9,7 @@ jobs:
   include: 
     - 
       stage: integration-test
-      script: mvn integration-test -B
+      script: mvn clean integration-test -B
 
 deploy: 
   skip_cleanup: true
